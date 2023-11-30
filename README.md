@@ -2,7 +2,7 @@
 CRUD for the final project of the Web Development course.
 
 What do you need to run the project?
-Install node
+- &nbsp;Install node
 
 How to run the project?
 - &nbsp;npm init -y
