@@ -22,5 +22,25 @@ CREATE TABLE produtos (
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL
 );
-
 ```
+
+Clone este repositório:
+git clone https://github.com/seu-usuario/crud-nodejs-mysql-bootstrap.git
+
+Acesse o diretório do projeto:
+cd crud-nodejs-mysql-bootstrap
+
+Instale as dependências:
+npm install
+
+Configure as variáveis de ambiente. Crie um arquivo chamado .env na raiz do projeto e adicione as seguintes informações:
+DB_HOST=seu-host-do-banco-de-dados
+DB_USER=seu-usuario-do-banco
+DB_PASSWORD=sua-senha-do-banco
+DB_DATABASE=crud_nodejs_mysql
+
+Executando o Projeto
+Inicie o servidor:
+npm start
+Abra o navegador e acesse http://localhost:3000.
+O projeto agora deve estar em execução e você pode interagir com o CRUD de produtos.
