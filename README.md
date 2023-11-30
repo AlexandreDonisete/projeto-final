@@ -13,6 +13,7 @@ CRUD for the final project of the Web Development course.
 - &nbsp;After executing the project locally, you can access http://localhost:3000 to see the project.
 
 <h2> Create MySQL </h2>
+
 - &nbsp;CREATE DATABASE IF NOT EXISTS crud_nodejs_mysql;
 
 - &nbsp;USE crud_nodejs_mysql;
