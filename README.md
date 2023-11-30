@@ -23,13 +23,15 @@ CREATE TABLE produtos (
     preco DECIMAL(10, 2) NOT NULL
 );
 ```
-
+## Clonando o repositório
 Clone este repositório:
 - &nbsp;git clone https://github.com/seu-usuario/crud-nodejs-mysql-bootstrap.git
 
+## Acessando ao diretóri
 Acesse o diretório do projeto:
 - &nbsp;cd crud-nodejs-mysql-bootstrap
 
+## Instalando dependências
 Instale as dependências:
 - &nbsp;npm install
 
