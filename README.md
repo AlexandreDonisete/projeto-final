@@ -1,5 +1,5 @@
 # projeto-final
-"CRUD for the final project of the Web Development course."
+CRUD for the final project of the Web Development course.
 
 What do you need to run the project?
 Install node
