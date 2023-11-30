@@ -1,26 +1,26 @@
-# projeto-final
-CRUD for the final project of the Web Development course.
+# CRUD de Produtos - Node.js, Express, MySQL, Bootstrap
 
-<h2> What do you need to run the project? </h2>
+Este é um projeto de exemplo de um CRUD (Create, Read, Update, Delete) de produtos utilizando Node.js, Express, MySQL para o backend e Bootstrap para o frontend.
 
-- &nbsp;Install node
+## Requisitos
 
-<h2> How to run the project? </h2>
+Certifique-se de ter os seguintes requisitos instalados em sua máquina:
 
-- &nbsp;npm init -y
-- &nbsp;npm install express mysql2
-- &nbsp;Execute node api.js
-- &nbsp;After executing the project locally, you can access http://localhost:3000 to see the project.
+- Node.js: [Instalar Node.js](https://nodejs.org/)
+- MySQL: [Instalar MySQL](https://dev.mysql.com/downloads/)
 
-<h2> Create MySQL </h2>
+## Configuração do Banco de Dados
 
-- &nbsp;CREATE DATABASE IF NOT EXISTS crud_nodejs_mysql;
+1. Crie um banco de dados MySQL chamado `crud_nodejs_mysql`.
 
-- &nbsp;USE crud_nodejs_mysql;
+```sql
+CREATE DATABASE crud_nodejs_mysql;
+USE crud_nodejs_mysql;
 
-- &nbsp;CREATE TABLE IF NOT EXISTS produtos (
+CREATE TABLE produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL
 );
 
+```
