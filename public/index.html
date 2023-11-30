@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabela de Produtos</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Tabela de Produtos</h2>
+    
+    <!-- Botão para abrir o modal de adição de produto -->
+    <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#addProductModal">
+        Adicionar Produto
+    </button>
+
+    <!-- Tabela para exibir produtos -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+    </table>
+</div>
+
+<!-- Modal de Adição de Produto -->
+<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Adicionar Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulário de adição de produto -->
+                <form id="addProductForm">
+                    <!-- Campos do formulário -->
+                    <div class="form-group">
+                        <label for="productName">Nome do Produto:</label>
+                        <input type="text" class="form-control" id="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Preço do Produto:</label>
+                        <input type="number" class="form-control" id="productPrice" required>
+                    </div>
+                    <!-- Botão de submit -->
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Edição de Produto -->
+<div class="modal fade" id="editProductModal" tabindex="-1" role="dialog" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProductModalLabel">Editar Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulário de edição de produto -->
+                <form id="editProductForm">
+                    <!-- Campos do formulário -->
+                    <div class="form-group">
+                        <label for="editProductName">Nome do Produto:</label>
+                        <input type="text" class="form-control" id="editProductName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editProductPrice">Preço do Produto:</label>
+                        <input type="number" class="form-control" id="editProductPrice" required>
+                    </div>
+                    <!-- Botão de submit -->
+                    <button type="submit" class="btn btn-warning">Atualizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="api.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
