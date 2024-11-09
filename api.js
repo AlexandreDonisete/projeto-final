@@ -2,16 +2,19 @@ const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const path = require('path');
+const { env } = require('process');
+require('dotenv').config()
+
 
 const app = express();
 const port = 3000;
 
 // Configuração do banco de dados
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'p0o9i8u7',
-  database: 'crud_nodejs_mysql'
+  host:  env.DB_HOST,
+  user: env.DB_USER,
+  password: env.DB_PASSWORD,
+  database: env.DB_DATABASE
 });
 
 // Conectar ao banco de dados
@@ -108,5 +111,5 @@ app.put('/api/produtos/:id', (req, res) => {
 
 // Iniciar o servidor
 app.listen(port, () => {
-  console.log(`Servidor iniciado na porta ${port}`);
+  console.log(`Servidor iniciado na porta localhost:${port}`);
 });
